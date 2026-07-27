@@ -2,8 +2,81 @@
   "name": "Private Mac Dictation Apps: Local vs Cloud (2026)",
   "canonicalUrl": "https://iravoice.com/research/mac-dictation-privacy-matrix",
   "reviewedAt": "2026-07-26",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "license": "CC BY 4.0",
+  "summary": {
+    "title": "A reproducible privacy-path snapshot.",
+    "description": "These counts are computed from named documentation cohorts, not inferred from a score. Every product in a cohort is listed so the result can be audited, cited, or recomputed.",
+    "stats": [
+      {
+        "id": "documentedLocalPath",
+        "value": 15,
+        "denominator": 17,
+        "label": "products document a local speech-to-text path",
+        "description": "At least one supported configuration keeps the audio-to-transcript step on the device.",
+        "products": [
+          "IraVoice",
+          "Apple Dictation",
+          "Google AI Edge Eloquent",
+          "BetterDictation",
+          "Spokenly",
+          "Superwhisper",
+          "MacWhisper",
+          "VoiceInk",
+          "Voice Type",
+          "Whryte",
+          "TypeVox",
+          "Dicta",
+          "MacParakeet",
+          "Susurr",
+          "Sotto"
+        ],
+        "caveat": "This includes configuration-dependent and optional local paths. It does not mean every mode or feature is local."
+      },
+      {
+        "id": "noDocumentedLocalPath",
+        "value": 2,
+        "denominator": 17,
+        "label": "products have no documented local speech path",
+        "description": "The reviewed first-party sources establish cloud speech processing but no local speech-to-text configuration.",
+        "products": [
+          "Raycast Dictation",
+          "Wispr Flow"
+        ],
+        "caveat": "This is a documentation finding, not packet inspection or verification of the current binary."
+      },
+      {
+        "id": "localPlusConnected",
+        "value": 10,
+        "denominator": 15,
+        "label": "locally capable products also document a connected path",
+        "description": "The optional path may be a provider, cleanup feature, assistant, vocabulary source, or agent handoff.",
+        "products": [
+          "IraVoice",
+          "Google AI Edge Eloquent",
+          "BetterDictation",
+          "Spokenly",
+          "Superwhisper",
+          "MacWhisper",
+          "VoiceInk",
+          "Voice Type",
+          "MacParakeet",
+          "Sotto"
+        ],
+        "caveat": "These paths do not all send microphone audio. Some send transcript text, selected text, vocabulary data, or a finished specification."
+      },
+      {
+        "id": "firstPartySources",
+        "value": 31,
+        "denominator": null,
+        "label": "first-party sources reviewed",
+        "description": "Product, help, security, privacy, launch, App Store, and repository pages support the product rows.",
+        "products": [],
+        "caveat": "Source count measures documentation coverage, not independent verification or product quality."
+      }
+    ],
+    "note": "Cohorts describe the documentation reviewed on July 26, 2026. They are not a privacy ranking, security certification, or claim that one architecture fits every workflow."
+  },
   "methodology": [
     "Review current first-party product, help, security, and privacy pages rather than copying vendor roundups.",
     "Separate microphone-audio transcription from later cleanup, formatting, assistant, sync, or destination processing.",

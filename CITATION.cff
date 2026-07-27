@@ -4,7 +4,7 @@ title: "Mac Dictation Privacy Matrix: Local vs Cloud"
 type: dataset
 authors:
   - name: "IraVoice for Mac"
-version: 1.2.0
+version: 1.3.0
 date-released: 2026-07-26
 url: "https://iravoice.com/research/mac-dictation-privacy-matrix"
 repository-artifact: "https://github.com/mvplab-ai/mac-dictation-privacy-matrix"
@@ -12,7 +12,8 @@ license: CC-BY-4.0
 abstract: >-
   A dated, source-reviewed comparison of 17 Mac dictation products across
   speech processing, configurable cloud paths, offline availability, retention,
-  account boundaries, platform requirements, caveats, and first-party sources.
+  account boundaries, platform requirements, caveats, named quantitative
+  documentation cohorts, and first-party sources.
 keywords:
   - dictation
   - speech-to-text

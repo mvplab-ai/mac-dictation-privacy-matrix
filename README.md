@@ -24,13 +24,31 @@ This repository is a distribution mirror for the canonical research page:
 | [`data/mac-dictation-privacy-matrix.json`](data/mac-dictation-privacy-matrix.json) | Structured metadata, methodology, product rows, caveats, and source records |
 | [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md) | Field definitions and interpretation rules |
 
-Current release: **1.2.0**
+Current release: **1.3.0**
 
 Last reviewed: **2026-07-26**
 
 Products: **17**
 
 First-party sources: **31**
+
+## Quantitative snapshot
+
+The JSON edition now publishes named cohorts so every count can be recomputed
+without interpreting product prose or accepting a hidden score.
+
+| Documentation cohort | Count | Named products |
+|---|---:|---|
+| At least one documented local speech-to-text path | **15/17** | IraVoice, Apple Dictation, Google AI Edge Eloquent, BetterDictation, Spokenly, Superwhisper, MacWhisper, VoiceInk, Voice Type, Whryte, TypeVox, Dicta, MacParakeet, Susurr, Sotto |
+| No documented local speech-to-text path in the reviewed sources | **2/17** | Raycast Dictation, Wispr Flow |
+| Locally capable and also documents an optional connected path | **10/15** | IraVoice, Google AI Edge Eloquent, BetterDictation, Spokenly, Superwhisper, MacWhisper, VoiceInk, Voice Type, MacParakeet, Sotto |
+| First-party sources reviewed | **31** | Product, help, security, privacy, launch, App Store, and repository pages |
+
+The 15-product cohort includes configuration-dependent and optional local
+paths; it does not mean every mode or feature is local. The connected paths do
+not all send microphone audio: some send transcript text, selected text,
+vocabulary data, or a finished specification. These are documentation cohorts,
+not security certifications or product rankings.
 
 ## Method
 
@@ -65,7 +83,7 @@ SHA-256:
 
 ```text
 6210a03dd9865648c110730688d9e50c822e8577c37e63c4526f6b01a0e1065c  data/mac-dictation-privacy-matrix.csv
-1fb0183b584a953ea9166f6f158d87dc1de84b72467d92b84b5f6bcc29a19b20  data/mac-dictation-privacy-matrix.json
+5228e1814be2fbd8ef347ab712fdd5c2553e1152886d75ef5722456f3dab0f2f  data/mac-dictation-privacy-matrix.json
 ```
 
 ## Corrections
@@ -85,7 +103,7 @@ summaries are not accepted as primary evidence.
 Use the repository's [`CITATION.cff`](CITATION.cff), or cite:
 
 > IraVoice for Mac. *Mac Dictation Privacy Matrix: Local vs Cloud*. Version
-> 1.2.0, reviewed 2026-07-26.
+> 1.3.0, reviewed 2026-07-26.
 > https://iravoice.com/research/mac-dictation-privacy-matrix
 
 ## License
