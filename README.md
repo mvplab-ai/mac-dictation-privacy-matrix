@@ -1,3 +1,23 @@
+---
+license: cc-by-4.0
+language:
+  - en
+pretty_name: Mac Dictation Privacy Matrix
+size_categories:
+  - n<1K
+tags:
+  - dictation
+  - speech-to-text
+  - macos
+  - privacy
+  - on-device-ai
+configs:
+  - config_name: default
+    data_files:
+      - split: train
+        path: data/mac-dictation-privacy-matrix.csv
+---
+
 # Mac Dictation Privacy Matrix
 
 An open, source-reviewed dataset comparing the documented privacy boundaries of
