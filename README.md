@@ -1,7 +1,7 @@
 # Mac Dictation Privacy Matrix
 
 An open, source-reviewed dataset comparing the documented privacy boundaries of
-17 Mac dictation products.
+18 Mac dictation products.
 
 The matrix separates questions that are often collapsed into one label:
 
@@ -24,13 +24,13 @@ This repository is a distribution mirror for the canonical research page:
 | [`data/mac-dictation-privacy-matrix.json`](data/mac-dictation-privacy-matrix.json) | Structured metadata, methodology, product rows, caveats, and source records |
 | [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md) | Field definitions and interpretation rules |
 
-Current release: **1.3.0**
+Current release: **1.4.0**
 
 Last reviewed: **2026-07-26**
 
-Products: **17**
+Products: **18**
 
-First-party sources: **31**
+First-party sources: **33**
 
 ## Quantitative snapshot
 
@@ -39,12 +39,12 @@ without interpreting product prose or accepting a hidden score.
 
 | Documentation cohort | Count | Named products |
 |---|---:|---|
-| At least one documented local speech-to-text path | **15/17** | IraVoice, Apple Dictation, Google AI Edge Eloquent, BetterDictation, Spokenly, Superwhisper, MacWhisper, VoiceInk, Voice Type, Whryte, TypeVox, Dicta, MacParakeet, Susurr, Sotto |
-| No documented local speech-to-text path in the reviewed sources | **2/17** | Raycast Dictation, Wispr Flow |
-| Locally capable and also documents an optional connected path | **10/15** | IraVoice, Google AI Edge Eloquent, BetterDictation, Spokenly, Superwhisper, MacWhisper, VoiceInk, Voice Type, MacParakeet, Sotto |
-| First-party sources reviewed | **31** | Product, help, security, privacy, launch, App Store, and repository pages |
+| At least one documented local speech-to-text path | **16/18** | IraVoice, Apple Dictation, Google AI Edge Eloquent, BetterDictation, Spokenly, Superwhisper, MacWhisper, VoiceInk, Voice Type, Whryte, TypeVox, Dicta, MacParakeet, Susurr, Sotto, Megaphone |
+| No documented local speech-to-text path in the reviewed sources | **2/18** | Raycast Dictation, Wispr Flow |
+| Locally capable and also documents an optional connected path | **10/16** | IraVoice, Google AI Edge Eloquent, BetterDictation, Spokenly, Superwhisper, MacWhisper, VoiceInk, Voice Type, MacParakeet, Sotto |
+| First-party sources reviewed | **33** | Product, help, security, privacy, launch, App Store, and repository pages |
 
-The 15-product cohort includes configuration-dependent and optional local
+The 16-product cohort includes configuration-dependent and optional local
 paths; it does not mean every mode or feature is local. The connected paths do
 not all send microphone audio: some send transcript text, selected text,
 vocabulary data, or a finished specification. These are documentation cohorts,
@@ -82,8 +82,8 @@ product configuration.
 SHA-256:
 
 ```text
-6210a03dd9865648c110730688d9e50c822e8577c37e63c4526f6b01a0e1065c  data/mac-dictation-privacy-matrix.csv
-5228e1814be2fbd8ef347ab712fdd5c2553e1152886d75ef5722456f3dab0f2f  data/mac-dictation-privacy-matrix.json
+200e60511509d1bff995685926d44599465880a2d25266373a4692c2f6b86a24  data/mac-dictation-privacy-matrix.csv
+6cca58ac5b67558d286958d346d824bd65bf698cb3c08faf2568a74cb5822b6a  data/mac-dictation-privacy-matrix.json
 ```
 
 ## Corrections
@@ -103,7 +103,7 @@ summaries are not accepted as primary evidence.
 Use the repository's [`CITATION.cff`](CITATION.cff), or cite:
 
 > IraVoice for Mac. *Mac Dictation Privacy Matrix: Local vs Cloud*. Version
-> 1.3.0, reviewed 2026-07-26.
+> 1.4.0, reviewed 2026-07-26.
 > https://iravoice.com/research/mac-dictation-privacy-matrix
 
 ## License

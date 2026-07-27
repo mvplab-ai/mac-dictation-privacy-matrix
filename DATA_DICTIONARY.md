@@ -19,7 +19,7 @@ stable `id`, a `value`, an optional `denominator`, a reader-facing `label` and
 | `firstPartySources` | Number of first-party sources represented in the top-level `sources` collection |
 
 `documentedLocalPath` and `noDocumentedLocalPath` are disjoint and together
-cover all 17 product rows. `localPlusConnected` is a subset of
+cover all 18 product rows. `localPlusConnected` is a subset of
 `documentedLocalPath`. A connected path does not necessarily send microphone
 audio; the cohort includes transcript text, selected text, vocabulary data,
 and finished-specification paths.
