@@ -2,7 +2,8 @@
   "name": "Private Mac Dictation Apps: Local vs Cloud (2026)",
   "canonicalUrl": "https://iravoice.com/research/mac-dictation-privacy-matrix",
   "reviewedAt": "2026-07-26",
-  "version": "1.4.0",
+  "updatedAt": "2026-10-01",
+  "version": "1.5.0",
   "license": "CC BY 4.0",
   "summary": {
     "title": "A reproducible privacy-path snapshot.",
@@ -64,7 +65,7 @@
           "MacParakeet",
           "Sotto"
         ],
-        "caveat": "These paths do not all send microphone audio. Some send transcript text, selected text, vocabulary data, or a finished specification."
+        "caveat": "These paths do not all send microphone audio. Some send only transcript text, selected text, or vocabulary data."
       },
       {
         "id": "firstPartySources",
@@ -100,13 +101,13 @@
     {
       "name": "IraVoice",
       "productUrl": "https://iravoice.com/privacy",
-      "processing": "Speech recognition and supported formatting run on the Mac after model setup.",
-      "configurableCloudPath": "No cloud speech mode. Optional direct agent handoff sends the finished specification, not microphone audio.",
-      "offline": "Dictate works after the speech-model download; paid continuation works after one Gumroad key check.",
-      "retention": "IraVoice says its servers receive no audio, transcript, selected text, vocabulary, or repository context; the Mac app has no product telemetry or cloud transcript history.",
-      "account": "No account or card for the full trial. Paid use relies on a Gumroad license key stored in Keychain.",
-      "platform": "macOS 26+ on Apple silicon.",
-      "caveat": "IraVoice publishes this matrix. Verify its product claims against the linked privacy page and treat the dataset as documentation research, not an independent audit.",
+      "processing": "On IraVoice Local, speech recognition runs on the computer with NVIDIA Parakeet after a one-time model download.",
+      "configurableCloudPath": "Optional IraVoice Cloud plan, coming soon and not yet on sale: Cloud recognition and AI polish will send audio and text to IraVoice Cloud, where Groq and Anthropic process them. Both features can be switched off.",
+      "offline": "Dictation, including the trial, works offline after the model download. A license checks in weekly and keeps working offline for 30 days.",
+      "retention": "IraVoice says Local sends no audio or text anywhere. For Cloud (coming soon), IraVoice’s servers never store audio or text, Groq does not retain inference data (its temporary abuse logging is switched off), Anthropic deletes API inputs and outputs within 30 days, and neither trains on them. A local History keeps the last five dictations on the computer; the app has no product telemetry.",
+      "account": "No account, email, or card for the 3-day trial. Purchases use Stripe Checkout; trial and license check-ins to api.iravoice.com send a salted hash of a hardware ID, never the raw ID.",
+      "platform": "macOS 13+ on Apple silicon, Windows 10 or 11 (64-bit), and Linux (beta).",
+      "caveat": "IraVoice publishes this matrix. This row was updated for IraVoice 1.0 on October 1, 2026, with IraVoice Cloud marked coming soon; the other rows reflect the July 26, 2026 review. Verify its product claims against the linked privacy page and treat the dataset as documentation research, not an independent audit.",
       "sourceIds": [
         "iravoice-privacy"
       ]

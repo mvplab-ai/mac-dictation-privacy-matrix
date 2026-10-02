@@ -44,7 +44,7 @@ This repository is a distribution mirror for the canonical research page:
 | [`data/mac-dictation-privacy-matrix.json`](data/mac-dictation-privacy-matrix.json) | Structured metadata, methodology, product rows, caveats, and source records |
 | [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md) | Field definitions and interpretation rules |
 
-Current release: **1.4.0**
+Current release: **1.5.0**
 
 Last reviewed: **2026-07-26**
 
@@ -102,8 +102,8 @@ product configuration.
 SHA-256:
 
 ```text
-200e60511509d1bff995685926d44599465880a2d25266373a4692c2f6b86a24  data/mac-dictation-privacy-matrix.csv
-6cca58ac5b67558d286958d346d824bd65bf698cb3c08faf2568a74cb5822b6a  data/mac-dictation-privacy-matrix.json
+ff47165c59fd92996df2dd4a0578bebd8885dd4985e925d7693d69b986e272ec  data/mac-dictation-privacy-matrix.csv
+fb1112bfb9fac171a91e98eb9e31422ec054ca8c2a64d1153832cb9e5d89952d  data/mac-dictation-privacy-matrix.json
 ```
 
 ## Corrections
@@ -122,8 +122,8 @@ summaries are not accepted as primary evidence.
 
 Use the repository's [`CITATION.cff`](CITATION.cff), or cite:
 
-> IraVoice for Mac. *Mac Dictation Privacy Matrix: Local vs Cloud*. Version
-> 1.4.0, reviewed 2026-07-26.
+> IraVoice. *Mac Dictation Privacy Matrix: Local vs Cloud*. Version
+> 1.5.0, reviewed 2026-07-26; IraVoice row updated 2026-10-01.
 > https://iravoice.com/research/mac-dictation-privacy-matrix
 
 ## License
